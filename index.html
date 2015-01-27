@@ -9,10 +9,27 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/typed.js"></script>
+		<script>
+		$(function(){
+			$(".title").typed({
+				strings: [
+					"I'm a Java developer.^500", "I'm a Web Designer.^500", "I'm a Bukkit coder.^500", "I'm Jadon Fowler.^4000", 
+					"I use OpenGL.^500", "I'm a PHP coder.^500", "I use GitHub.^500", "I'm Jadon Fowler.^4000",
+					"I use MySQL.^500", "I make Twitter Bots.^500", "I code in D.^500", "I'm Jadon Fowler.^4000",
+					"I use F# & C#.^500", "I use TI BASIC.^500", "I Python coder.^500", "I'm Jadon Fowler.^4000",
+					"I code in Swift.^500", "I code in JavaScript.^500", "I have mixed feelings about CSS.^500", "I'm Jadon Fowler.^4000"
+				],
+				typeSpeed: 50,
+				contentType: 'html',
+				showCursor: false
+			});
+		});
+		</script>
 		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/skel.css"/>
+			<link rel="stylesheet" href="css/style.css"/>
+			<link rel="stylesheet" href="css/style-wide.css"/>
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -21,10 +38,8 @@
 		<!-- Header -->
 			<div id="header">
 				<span class="logo icon fa-code"></span>
-				<h1>I'm Jadon Fowler</h1>
-				<p>I code many different things in many languages, which include but are not limited to:
-				<br />
-				Bukkit Plugins, Websites, and other stuff!</p>
+				<h1><div class="title"></div></h1>
+				<p>I code many different things in many languages, including Bukkit plugins, websites, and other stuff!</p>
 			</div>
 
 		<!-- Main -->
@@ -41,7 +56,8 @@
 						<a href="https://github.com/Phasesaber/" class="image icon fa-terminal"><img id="github" src="images/github.png" alt="" /></a>
 						<div class="content">
 							<h3>GitHub</h3>
-							<p>99.9% of my stuff is on <a href="https://github.com/Phasesaber/">GitHub</a>, so you can look at my code and see how I do things! (the other 0.1% is stuff I forget to upload there)</p>
+				
+				<p>99.9% of my stuff is on <a href="https://github.com/Phasesaber/">GitHub</a>, so you can look at my code and see how I do things! (the other 0.1% is stuff I forget to upload there)</p>
 						</div>
 					</section>
 					<section class="feature right">
@@ -55,7 +71,7 @@
 						<a class="image icon fa-mobile"><img src="http://wiziq.com/blog/wp-content/uploads/2014/07/prog-languages.png" alt="" /></a>
 						<div class="content">
 							<h3>Languages</h3>
-							<p>My main programming languages are Java, Python, JavaScript, & D, but I know many more such as Lua, PHP, Brainf*ck, Haskell, C#, and F#!</p>
+							<p>My main programming languages are Java, Python, JavaScript, & D, but I know many more such as Lua, PHP, Haskell, C#, and F#!</p>
 						</div>
 					</section>
 				</div>
